@@ -1,4 +1,5 @@
 # Godot-specific ignores
+.DS_Store
 .godot/
 .import/
 export.cfg
