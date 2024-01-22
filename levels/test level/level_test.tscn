@@ -7,22 +7,25 @@
 [node name="LevelTest" instance=ExtResource("1_g5rn3")]
 
 [node name="Player" parent="." index="0" instance=ExtResource("2_ukdrd")]
+position = Vector2(325, 458)
 collision_mask = 2
 
-[node name="Floor" parent="." index="1" instance=ExtResource("3_lepu4")]
+[node name="Floors" type="Node" parent="." index="1"]
 
-[node name="Floor2" parent="." index="2" instance=ExtResource("3_lepu4")]
+[node name="Floor" parent="Floors" index="0" instance=ExtResource("3_lepu4")]
+
+[node name="Floor2" parent="Floors" index="1" instance=ExtResource("3_lepu4")]
 position = Vector2(-1210, 975)
 scale = Vector2(0.4, 1)
 
-[node name="Floor3" parent="." index="3" instance=ExtResource("3_lepu4")]
+[node name="Floor3" parent="Floors" index="2" instance=ExtResource("3_lepu4")]
 position = Vector2(2761, 407)
 scale = Vector2(0.564609, 0.991218)
 
-[node name="Floor4" parent="." index="4" instance=ExtResource("3_lepu4")]
+[node name="Floor4" parent="Floors" index="3" instance=ExtResource("3_lepu4")]
 position = Vector2(4886, 1108)
 scale = Vector2(0.564609, 0.991218)
 
-[node name="Floor5" parent="." index="5" instance=ExtResource("3_lepu4")]
+[node name="Floor5" parent="Floors" index="4" instance=ExtResource("3_lepu4")]
 position = Vector2(-2776, 926)
 scale = Vector2(0.564609, 0.991218)
