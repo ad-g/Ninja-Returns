@@ -1,3 +1,18 @@
 [gd_scene format=3 uid="uid://dvo7xlx5hmim5"]
 
 [node name="World" type="Node2D"]
+
+[node name="DebugInfo" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="DebugInfo"]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+
+[node name="Label" type="Label" parent="DebugInfo/MarginContainer"]
+modulate = Color(1, 1, 1, 0.266667)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Reload scene: \"R\"
+Quit: \"ESC\""
