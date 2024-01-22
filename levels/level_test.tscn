@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0eeurwr6l03b"]
+
+[ext_resource type="PackedScene" uid="uid://dvo7xlx5hmim5" path="res://world.tscn" id="1_d6bg5"]
+[ext_resource type="PackedScene" uid="uid://b2hvwgo10602j" path="res://player/player.tscn" id="2_5ws2k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lfokw"]
+size = Vector2(1954, 162)
+
+[node name="LevelTest" instance=ExtResource("1_d6bg5")]
+
+[node name="Player" parent="." index="0" instance=ExtResource("2_5ws2k")]
+collision_mask = 2
+
+[node name="Floor" type="StaticBody2D" parent="." index="1"]
+position = Vector2(752, 600)
+collision_layer = 2
+
+[node name="ColorRect" type="ColorRect" parent="Floor" index="0"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -977.0
+offset_top = -78.0
+offset_right = 977.0
+offset_bottom = 1562.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.803922, 0.803922, 0.803922, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" index="1"]
+shape = SubResource("RectangleShape2D_lfokw")
