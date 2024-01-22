@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0eeurwr6l03b"]
+
+[ext_resource type="PackedScene" uid="uid://dvo7xlx5hmim5" path="res://world.tscn" id="1_g5rn3"]
+[ext_resource type="PackedScene" uid="uid://b2hvwgo10602j" path="res://player/player.tscn" id="2_ukdrd"]
+[ext_resource type="PackedScene" uid="uid://e7yk1jk7bged" path="res://levels/test level/floor.tscn" id="3_lepu4"]
+
+[node name="LevelTest" instance=ExtResource("1_g5rn3")]
+
+[node name="Player" parent="." index="0" instance=ExtResource("2_ukdrd")]
+collision_mask = 2
+
+[node name="Floor" parent="." index="1" instance=ExtResource("3_lepu4")]
+
+[node name="Floor2" parent="." index="2" instance=ExtResource("3_lepu4")]
+position = Vector2(-1210, 975)
+scale = Vector2(0.4, 1)
+
+[node name="Floor3" parent="." index="3" instance=ExtResource("3_lepu4")]
+position = Vector2(2761, 407)
+scale = Vector2(0.564609, 0.991218)
+
+[node name="Floor4" parent="." index="4" instance=ExtResource("3_lepu4")]
+position = Vector2(4886, 1108)
+scale = Vector2(0.564609, 0.991218)
+
+[node name="Floor5" parent="." index="5" instance=ExtResource("3_lepu4")]
+position = Vector2(-2776, 926)
+scale = Vector2(0.564609, 0.991218)

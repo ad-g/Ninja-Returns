@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Ninja Returns"
+run/main_scene="res://levels/test level/level_test.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -43,6 +44,10 @@ jump={
 
 2d_physics/layer_1="Player"
 2d_physics/layer_2="Floor"
+
+[physics]
+
+2d/default_gravity=1200.0
 
 [rendering]
 
